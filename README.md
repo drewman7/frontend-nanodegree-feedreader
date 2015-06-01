@@ -1,3 +1,27 @@
+Front-End Web Developer:  Feedreader App
+==========================================
+Weblink:  http://drewman7.github.io/frontend-nanodegree-feedreader/
+
+Welcome to the Feedreader App!
+
+-----------------
+Directions for using the Feedreader App
+(Normal Use)
+
+1. Load the index.html file in your borwser or navigate to the weblink.  You will see the Uadacity Blog feed page by default.
+2. If you desire to read one of the show entries on the screen, click on the associated hyperlink.
+3. To change the feed list, select the menu icon in the upper left corner.  A menu will appear from the left.
+4. Select the feed list you wish to load.
+5. The menu will disappear.  Select the hyperlink of the entry shown on the screen as desire.
+
+(Testing/Jasmine Environment)
+
+1. Load the index.html or navigate to the weblink.  You will see the Linear Digressions feed page by default.
+2. The Jasmine test results will be shown at the bottom of the page.  Review if desired.
+3. To use the page normally, following the Normal Use instructions above starting at #3.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+(pervious README.md text)
 # Project Overview
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.

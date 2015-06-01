@@ -31,12 +31,12 @@ $(function() {
         });
 
 
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a URL defined
-         * and that the URL is not empty.
+        /* The following test checks if the allFeeds items have a URL
+         * defined with content.  This meets the following requirement:
+         *      TODO: Write a test that loops through each feed
+         *      in the allFeeds object and ensures it has a URL defined
+         *      and that the URL is not empty.
          */
-
-        // This test checks if the allFeeds items have a URL defined with content
         it('have URLs', function() {
             // For loop goes through each item in the allFeeds object
             for (var i=0; i < allFeeds.length; i++) {
@@ -47,12 +47,14 @@ $(function() {
             }
         });
 
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a name defined
-         * and that the name is not empty.
+        /* The following test checks if the allFeeds items have a name
+         * defined with content.  This meets the following requirememnt:
+         *      TODO: Write a test that loops through each feed
+         *      in the allFeeds object and ensures it has a name defined
+         *      and that the name is not empty.
          */
 
-        // This test checks if the allFeeds items have a name defined with content
+        //
         it('have names', function() {
             // For loop goes through each item in the allFeeds object
             for (var i=0; i < allFeeds.length; i++) {
@@ -65,28 +67,31 @@ $(function() {
     });
 
 
-    /* TODO: Write a new test suite named "The menu" */
+    /* The following group of tests check "the menu" which meets the
+     * following requirement:
+     *     TODO: Write a new test suite named "The menu"
+     */
     describe('The menu', function() {
-        /* TODO: Write a test that ensures the menu element is
-         * hidden by default. You'll have to analyze the HTML and
-         * the CSS to determine how we're performing the
-         * hiding/showing of the menu element.
+        /* The following test checks to see if the menu is hidden by default.
+         * This test meets the following requirement:
+         *      TODO: Write a test that ensures the menu element is
+         *      hidden by default. You'll have to analyze the HTML and
+         *      the CSS to determine how we're performing the
+         *      hiding/showing of the menu element.
          */
-
-        // This test checks to see if the menu is hidden by default
         it('menu is hidden by default', function() {
             // Checks if the body element has the menu-hidden class
             // If so, it means the menu is hidden
             expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
-         /* TODO: Write a test that ensures the menu changes
-          * visibility when the menu icon is clicked. This test
-          * should have two expectations: does the menu display when
-          * clicked and does it hide when clicked again.
+         /* The following test checks to see if the menu unhides and hides
+          * when clicked.  This test meets the following requirement:
+          *     TODO: Write a test that ensures the menu changes
+          *     visibility when the menu icon is clicked. This test
+          *     should have two expectations: does the menu display when
+          *     clicked and does it hide when clicked again.
           */
-
-        // This test checks to see if the menu unhides and hides when clicked
         it('menu unhides/hides when clicked', function() {
             // Initiates a click on the menu icon
             $('.menu-icon-link').trigger( "click" );
@@ -100,13 +105,19 @@ $(function() {
             expect($('body').hasClass('menu-hidden')).toBe(true);
         });
     });
-    /* TODO: Write a new test suite named "Initial Entries" */
+
+    /* The following group of tests check the "Initial Entries"
+     * which meets the following requirement:
+     *      TODO: Write a new test suite named "Initial Entries"
+     */
     describe('Initial Entries', function() {
-        /* TODO: Write a test that ensures when the loadFeed
-         * function is called and completes its work, there is at least
-         * a single .entry element within the .feed container.
-         * Remember, loadFeed() is asynchronous so this test wil require
-         * the use of Jasmine's beforeEach and asynchronous done() function.
+        /* The following checks to see if there is a .entry element within the
+         * .feed container.  This test meets the following requirement:
+         *      TODO: Write a test that ensures when the loadFeed
+         *      function is called and completes its work, there is at least
+         *      a single .entry element within the .feed container.
+         *      Remember, loadFeed() is asynchronous so this test wil require
+         *      the use of Jasmine's beforeEach and asynchronous done() function.
          */
 
         // Performs the asynchronous loadFeed function before running the test
@@ -125,11 +136,16 @@ $(function() {
         });
     });
 
-    /* TODO: Write a new test suite named "New Feed Selection" */
+    /* The following group of tests check "New Feed Selection" which meets the
+     * the following requirement:
+    /*      TODO: Write a new test suite named "New Feed Selection"
+    */
     describe('New Feed Selection', function() {
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
+        /* The following tests check if the Feed Selections change when moving
+         * through the allFeeds objects.  These tests meet the following requirement:
+         *      TODO: Write a test that ensures when a new feed is loaded
+         *      by the loadFeed function that the content actually changes.
+         *      Remember, loadFeed() is asynchronous.
          */
 
         var indexNum = 0;                       // variable used for the loadFeed index
